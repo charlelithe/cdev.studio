@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us — CDev.Studio</title>
+    <meta name="description" content="CDev.Studio is a web design and development studio focused on modern, lightweight, and effective digital experiences for businesses.">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CDev.Studio">
+    <meta property="og:title" content="About Us — CDev.Studio">
+    <meta property="og:description" content="CDev.Studio is a web design and development studio focused on modern, lightweight, and effective digital experiences for businesses.">
+    <meta property="og:image" content="assets/images/og-image.svg">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="page-about">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Global chrome: page transition, scroll progress, custom cursor -->
+    <div class="page-transition" aria-hidden="true"><span class="page-transition__logo">CDev.Studio</span></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true">
+        <span class="cursor__dot"></span>
+        <span class="cursor__ring"><span class="cursor__label">View</span></span>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="logo" aria-label="CDev.Studio — Home">CDev<span class="logo__dot">.</span>Studio</a>
+            <nav class="nav" aria-label="Primary">
+                <ul class="nav__list">
+                <li><a class="nav__link link-underline" href="index.html">Home</a></li>
+                <li><a class="nav__link link-underline" href="about.html" aria-current="page">About Us</a></li>
+                <li><a class="nav__link link-underline" href="services.html">Services</a></li>
+                <li><a class="nav__link link-underline" href="projects.html">Projects</a></li>
+                <li><a class="nav__link link-underline" href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="nav__cta" data-magnetic="0.25">Start a project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+            <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav aria-label="Mobile">
+            <ul class="mobile-menu__list">
+            <li><a class="mobile-menu__link" href="index.html">Home <small>01</small></a></li>
+            <li><a class="mobile-menu__link" href="about.html" aria-current="page">About Us <small>02</small></a></li>
+            <li><a class="mobile-menu__link" href="services.html">Services <small>03</small></a></li>
+            <li><a class="mobile-menu__link" href="projects.html">Projects <small>04</small></a></li>
+            <li><a class="mobile-menu__link" href="contact.html">Contact Me <small>05</small></a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__footer mono">
+            <a href="mailto:hello@cdev.studio">hello@cdev.studio</a>
+            <span>Fast websites. Thoughtful design.</span>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <!-- ============ ABOUT HERO ============ -->
+        <section class="page-hero" aria-labelledby="about-title">
+            <div class="container">
+                <div class="page-hero__top mono" data-load="fade">
+                    <span>( About Us )</span>
+                    <span>CDev.Studio — Independent web studio</span>
+                </div>
+                <h1 class="display-xl about-hero__title" id="about-title" data-load-lines>
+                    <span class="line"><span>We design</span></span>
+                    <span class="line"><span>digital <em class="outline">experiences</em></span></span>
+                    <span class="line"><span>with purpose.</span></span>
+                </h1>
+
+                <div class="about-hero__intro">
+                    <p class="eyebrow" data-reveal>Who we are</p>
+                    <div>
+                        <p class="about-hero__text" data-reveal>CDev.Studio is a web design and development studio focused on creating modern, lightweight, and effective digital experiences for businesses.</p>
+                        <p class="lead muted" style="margin-top:32px;max-width:52ch" data-reveal>We work closely and directly with every client — no layers of account managers, no bloated processes. Just careful design, clean code, and websites that do their job.</p>
+                    </div>
+                </div>
+
+                <dl class="facts">
+                    <div class="fact" data-reveal style="--d:0"><dt>Discipline</dt><dd>Design + Development</dd></div>
+                    <div class="fact" data-reveal style="--d:1"><dt>Stack</dt><dd>HTML · CSS · JS · WordPress</dd></div>
+                    <div class="fact" data-reveal style="--d:2"><dt>Working model</dt><dd>Small studio, direct collaboration</dd></div>
+                    <div class="fact" data-reveal style="--d:3"><dt>Clients</dt><dd>Local businesses to growing brands</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- ============ TYPOGRAPHIC VISUAL ============ -->
+        <div class="about-visual" aria-hidden="true">
+            <div class="about-visual__grid" data-parallax="-0.12"></div>
+            <div class="noise"></div>
+            <p class="about-visual__text" data-parallax="0.08">
+                <span>Purpose</span>
+                <span>( over )</span>
+                <span><em class="outline">Decoration</em></span>
+            </p>
+            <div class="about-visual__caption mono"><span>Fig. 01</span><span>Every pixel earns its place</span></div>
+        </div>
+
+        <!-- ============ APPROACH ============ -->
+        <section class="section" aria-labelledby="approach-title">
+            <div class="container approach__grid">
+                <div class="approach__sticky">
+                    <p class="eyebrow" data-reveal>(01) — Our approach</p>
+                    <h2 class="display-lg approach__title" id="approach-title" data-reveal-lines>
+                        <span class="line"><span>Simple.</span></span>
+                        <span class="line"><span>Strategic.</span></span>
+                        <span class="line"><span>Effective.</span></span>
+                    </h2>
+                </div>
+                <div>
+                    <p class="approach__lead" data-reveal>A website should do more than look good. Every page we create has a purpose — to explain, to build trust, to convert. Design decisions follow that purpose, not trends.</p>
+                    <article class="approach-item" data-reveal>
+                        <span class="approach-item__num">01</span>
+                        <div>
+                            <h3 class="approach-item__title">Simple</h3>
+                            <p class="approach-item__text">We remove everything that doesn't help your visitor. Clear structure, focused messaging, and interfaces that feel effortless to use.</p>
+                        </div>
+                    </article>
+                    <article class="approach-item" data-reveal>
+                        <span class="approach-item__num">02</span>
+                        <div>
+                            <h3 class="approach-item__title">Strategic</h3>
+                            <p class="approach-item__text">We start with your goals and your customers. Who needs to find you, what they need to know, and what you want them to do next.</p>
+                        </div>
+                    </article>
+                    <article class="approach-item" data-reveal>
+                        <span class="approach-item__num">03</span>
+                        <div>
+                            <h3 class="approach-item__title">Effective</h3>
+                            <p class="approach-item__text">Fast load times, responsive layouts and solid technical foundations — so your website performs as well as it looks, on every device.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ VALUES ============ -->
+        <section class="section section--off" aria-labelledby="values-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="eyebrow" data-reveal>(02) — Our values</p>
+                    <h2 class="display-xl" id="values-title" data-reveal-lines>
+                        <span class="line"><span>What we</span></span>
+                        <span class="line"><span>stand for</span></span>
+                    </h2>
+                </header>
+                <ol class="values__list">
+                    <li class="value-row" data-reveal>
+                        <span class="value-row__num">01</span>
+                        <h3 class="value-row__title">Design with purpose</h3>
+                        <p class="value-row__text">Every layout, color and interaction exists for a reason — to guide, inform or convert.</p>
+                    </li>
+                    <li class="value-row" data-reveal>
+                        <span class="value-row__num">02</span>
+                        <h3 class="value-row__title">Build for performance</h3>
+                        <p class="value-row__text">Speed is part of the design. Lean code and optimized assets come standard.</p>
+                    </li>
+                    <li class="value-row" data-reveal>
+                        <span class="value-row__num">03</span>
+                        <h3 class="value-row__title">Keep things simple</h3>
+                        <p class="value-row__text">Simple to use, simple to manage, simple to grow. Complexity is a cost.</p>
+                    </li>
+                    <li class="value-row" data-reveal>
+                        <span class="value-row__num">04</span>
+                        <h3 class="value-row__title">Focus on users</h3>
+                        <p class="value-row__text">We design for the people who visit your website — accessible, clear and comfortable on any screen.</p>
+                    </li>
+                    <li class="value-row" data-reveal>
+                        <span class="value-row__num">05</span>
+                        <h3 class="value-row__title">Create for growth</h3>
+                        <p class="value-row__text">Websites built on solid foundations that scale as your business moves forward.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ WHY CDEV.STUDIO ============ -->
+        <section class="section section--dark" aria-labelledby="why-title">
+            <div class="container">
+                <p class="eyebrow" data-reveal id="why-title">(03) — Why CDev.Studio</p>
+                <div class="why__list" style="margin-top:clamp(40px,6vw,88px)">
+                    <p class="why__line" data-split="words" data-scrub>No unnecessary complexity.</p>
+                    <p class="why__line" data-split="words" data-scrub>No slow experiences.</p>
+                    <p class="why__line" data-split="words" data-scrub>No generic templates.</p>
+                    <p class="why__line why__line--final" data-split="words" data-scrub>Just better websites.</p>
+                </div>
+                <div class="why__foot">
+                    <p class="mono">Hand-built · Performance-first · Accessible</p>
+                    <a href="projects.html" class="link-arrow" style="color:var(--white)">See the work <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MARQUEE ============ -->
+        <div class="marquee marquee--reverse" aria-hidden="true">
+            <div class="marquee__track">
+                <div class="marquee__group">
+                    <span class="marquee__item">Purpose</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Performance</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Simplicity</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Users</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Growth</span><span class="marquee__sep">•</span>
+                </div>
+                <div class="marquee__group">
+                    <span class="marquee__item">Purpose</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Performance</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Simplicity</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Users</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Growth</span><span class="marquee__sep">•</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ CTA ============ -->
+        <section class="section cta" aria-labelledby="about-cta">
+            <div class="container cta__inner">
+                <div>
+                    <p class="eyebrow" data-reveal>Next step</p>
+                    <h2 class="display-xl cta__title" id="about-cta" style="margin-top:28px" data-split="words">Let's build your website.</h2>
+                    <p class="cta__text" data-reveal>Tell us about your business and what you need. We'll take it from there.</p>
+                </div>
+                <a href="contact.html" class="btn btn--solid btn--circle" data-magnetic="0.4" data-reveal="scale">Start a project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__intro">
+                    <p class="eyebrow">Have a project in mind?</p>
+                    <a href="mailto:hello@cdev.studio" class="footer__email link-underline">hello@cdev.studio</a>
+                    <p class="footer__tagline">Fast websites. Thoughtful design. Built to grow.</p>
+                </div>
+                <nav class="footer__col" aria-label="Footer">
+                    <p class="eyebrow">Navigation</p>
+                    <ul>
+                        <li><a class="link-underline" href="index.html">Home</a></li>
+                        <li><a class="link-underline" href="about.html">About Us</a></li>
+                        <li><a class="link-underline" href="services.html">Services</a></li>
+                        <li><a class="link-underline" href="projects.html">Projects</a></li>
+                        <li><a class="link-underline" href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__col">
+                    <p class="eyebrow">Social</p>
+                    <ul>
+                        <li><a class="link-underline" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></li>
+                        <li><a class="link-underline" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                        <li><a class="link-underline" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook ↗</a></li>
+                        <li><a class="link-underline" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="index.html" class="footer__wordmark" data-split="chars" data-proximity aria-label="CDev.Studio — Home">CDev.Studio</a>
+            <div class="footer__bottom">
+                <p>© 2026 CDev.Studio. All rights reserved.</p>
+                <p>Hand-built with HTML, CSS &amp; JavaScript.</p>
+                <a href="#main" class="link-underline" data-back-top>Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+        <svg viewBox="0 0 52 52" aria-hidden="true"><circle class="ring-track" cx="26" cy="26" r="24"/><circle class="ring-progress" cx="26" cy="26" r="24"/></svg>
+        <span class="back-to-top__arrow" aria-hidden="true">↑</span>
+    </button>
+</body>
+</html>

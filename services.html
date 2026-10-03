@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services — CDev.Studio</title>
+    <meta name="description" content="Web design, WordPress development, custom websites, SEO, hosting and maintenance — digital solutions built around your business.">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CDev.Studio">
+    <meta property="og:title" content="Services — CDev.Studio">
+    <meta property="og:description" content="Web design, WordPress development, custom websites, SEO, hosting and maintenance — digital solutions built around your business.">
+    <meta property="og:image" content="assets/images/og-image.svg">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="page-services">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Global chrome: page transition, scroll progress, custom cursor -->
+    <div class="page-transition" aria-hidden="true"><span class="page-transition__logo">CDev.Studio</span></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true">
+        <span class="cursor__dot"></span>
+        <span class="cursor__ring"><span class="cursor__label">View</span></span>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="logo" aria-label="CDev.Studio — Home">CDev<span class="logo__dot">.</span>Studio</a>
+            <nav class="nav" aria-label="Primary">
+                <ul class="nav__list">
+                <li><a class="nav__link link-underline" href="index.html">Home</a></li>
+                <li><a class="nav__link link-underline" href="about.html">About Us</a></li>
+                <li><a class="nav__link link-underline" href="services.html" aria-current="page">Services</a></li>
+                <li><a class="nav__link link-underline" href="projects.html">Projects</a></li>
+                <li><a class="nav__link link-underline" href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="nav__cta" data-magnetic="0.25">Start a project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+            <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav aria-label="Mobile">
+            <ul class="mobile-menu__list">
+            <li><a class="mobile-menu__link" href="index.html">Home <small>01</small></a></li>
+            <li><a class="mobile-menu__link" href="about.html">About Us <small>02</small></a></li>
+            <li><a class="mobile-menu__link" href="services.html" aria-current="page">Services <small>03</small></a></li>
+            <li><a class="mobile-menu__link" href="projects.html">Projects <small>04</small></a></li>
+            <li><a class="mobile-menu__link" href="contact.html">Contact Me <small>05</small></a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__footer mono">
+            <a href="mailto:hello@cdev.studio">hello@cdev.studio</a>
+            <span>Fast websites. Thoughtful design.</span>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <!-- ============ SERVICES HERO ============ -->
+        <section class="page-hero" aria-labelledby="services-title">
+            <div class="container">
+                <div class="page-hero__top mono" data-load="fade">
+                    <span>( Services )</span>
+                    <span>06 disciplines — one studio</span>
+                </div>
+                <h1 class="display-xl page-hero__title" id="services-title" data-load-lines>
+                    <span class="line"><span>Digital solutions</span></span>
+                    <span class="line"><span><em class="outline">built around</em></span></span>
+                    <span class="line"><span>your business.</span></span>
+                </h1>
+                <div class="services-hero__grid">
+                    <p class="services-hero__lead" data-reveal>From the first sketch to ongoing care, we cover everything your website needs — designed, built and maintained with the same attention to detail.</p>
+                    <nav aria-label="Service index" data-reveal style="--d:1">
+                        <ul class="svc-index">
+                        <li><a href="#web-design">Web Design <span>01</span></a></li>
+                        <li><a href="#wordpress">WordPress Development <span>02</span></a></li>
+                        <li><a href="#custom">Custom Website Development <span>03</span></a></li>
+                        <li><a href="#seo">SEO <span>04</span></a></li>
+                        <li><a href="#hosting">Hosting <span>05</span></a></li>
+                        <li><a href="#maintenance">Maintenance <span>06</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SERVICE LIST (accordion) ============ -->
+        <section class="section" style="padding-top:0" aria-label="Service details">
+            <div class="container">
+                <div class="services-list">
+                    <article class="service is-open" id="web-design" data-reveal>
+                        <h2 class="service__h"><button class="service__head" type="button" aria-expanded="true" aria-controls="web-design-panel" id="web-design-btn">
+                            <span class="service__num">01</span>
+                            <span class="service__title">Web Design</span>
+                            <span class="service__summary">Modern and responsive interfaces designed around your brand.</span>
+                            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                        </button></h2>
+                        <div class="service__panel" id="web-design-panel" role="region" aria-labelledby="web-design-btn">
+                            <div class="service__panel-inner">
+                                <div class="service__content">
+                                    <div class="service__left">
+                                        <p class="service__desc">We shape a visual direction that feels unmistakably yours, then design every page around how your customers think, scan and decide.</p>
+                                        <a href="contact.html" class="link-arrow" style="margin-top:32px">Start a web design project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+                                    </div>
+                                    <ul class="service__features" aria-label="Web Design features">
+                                        <li>Brand-aligned visual direction</li>
+                                        <li>Responsive layouts for every screen</li>
+                                        <li>UX structure & content hierarchy</li>
+                                        <li>Interactive prototypes</li>
+                                        <li>Design system & components</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="service" id="wordpress" data-reveal>
+                        <h2 class="service__h"><button class="service__head" type="button" aria-expanded="false" aria-controls="wordpress-panel" id="wordpress-btn">
+                            <span class="service__num">02</span>
+                            <span class="service__title">WordPress Development</span>
+                            <span class="service__summary">Professional WordPress websites that are easy to manage and maintain.</span>
+                            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                        </button></h2>
+                        <div class="service__panel" id="wordpress-panel" role="region" aria-labelledby="wordpress-btn">
+                            <div class="service__panel-inner">
+                                <div class="service__content">
+                                    <div class="service__left">
+                                        <p class="service__desc">Custom, lightweight WordPress themes without page-builder bloat — so your team can update content confidently while the site stays fast.</p>
+                                        <a href="contact.html" class="link-arrow" style="margin-top:32px">Start a wordpress development project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+                                    </div>
+                                    <ul class="service__features" aria-label="WordPress Development features">
+                                        <li>Custom theme development</li>
+                                        <li>Editor-friendly content blocks</li>
+                                        <li>WooCommerce & integrations</li>
+                                        <li>Speed & security hardening</li>
+                                        <li>Training & handover</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="service" id="custom" data-reveal>
+                        <h2 class="service__h"><button class="service__head" type="button" aria-expanded="false" aria-controls="custom-panel" id="custom-btn">
+                            <span class="service__num">03</span>
+                            <span class="service__title">Custom Website Development</span>
+                            <span class="service__summary">Lightweight HTML, CSS, and JavaScript websites built for speed and flexibility.</span>
+                            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                        </button></h2>
+                        <div class="service__panel" id="custom-panel" role="region" aria-labelledby="custom-btn">
+                            <div class="service__panel-inner">
+                                <div class="service__content">
+                                    <div class="service__left">
+                                        <p class="service__desc">Hand-written front ends and web applications built precisely around your requirements — no unnecessary frameworks, no wasted kilobytes.</p>
+                                        <a href="contact.html" class="link-arrow" style="margin-top:32px">Start a custom website development project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+                                    </div>
+                                    <ul class="service__features" aria-label="Custom Website Development features">
+                                        <li>Semantic HTML, modern CSS, vanilla JS</li>
+                                        <li>Web applications & dashboards</li>
+                                        <li>API & third-party integrations</li>
+                                        <li>Accessibility best practices</li>
+                                        <li>Clean, documented code you own</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="service" id="seo" data-reveal>
+                        <h2 class="service__h"><button class="service__head" type="button" aria-expanded="false" aria-controls="seo-panel" id="seo-btn">
+                            <span class="service__num">04</span>
+                            <span class="service__title">SEO</span>
+                            <span class="service__summary">Improve website structure, content, and technical performance.</span>
+                            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                        </button></h2>
+                        <div class="service__panel" id="seo-panel" role="region" aria-labelledby="seo-btn">
+                            <div class="service__panel-inner">
+                                <div class="service__content">
+                                    <div class="service__left">
+                                        <p class="service__desc">Technical and on-page improvements that help search engines understand your website — and help the right customers find it.</p>
+                                        <a href="contact.html" class="link-arrow" style="margin-top:32px">Start a seo project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+                                    </div>
+                                    <ul class="service__features" aria-label="SEO features">
+                                        <li>Technical SEO audit</li>
+                                        <li>On-page optimization</li>
+                                        <li>Structured data / schema</li>
+                                        <li>Core Web Vitals improvements</li>
+                                        <li>Local SEO foundations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="service" id="hosting" data-reveal>
+                        <h2 class="service__h"><button class="service__head" type="button" aria-expanded="false" aria-controls="hosting-panel" id="hosting-btn">
+                            <span class="service__num">05</span>
+                            <span class="service__title">Hosting</span>
+                            <span class="service__summary">Website deployment and hosting solutions.</span>
+                            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                        </button></h2>
+                        <div class="service__panel" id="hosting-panel" role="region" aria-labelledby="hosting-btn">
+                            <div class="service__panel-inner">
+                                <div class="service__content">
+                                    <div class="service__left">
+                                        <p class="service__desc">We deploy your website to reliable, fast infrastructure and handle the technical setup so launch day is calm.</p>
+                                        <a href="contact.html" class="link-arrow" style="margin-top:32px">Start a hosting project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+                                    </div>
+                                    <ul class="service__features" aria-label="Hosting features">
+                                        <li>Deployment & domain setup</li>
+                                        <li>SSL certificates</li>
+                                        <li>CDN & caching configuration</li>
+                                        <li>Business email guidance</li>
+                                        <li>Uptime monitoring</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="service" id="maintenance" data-reveal>
+                        <h2 class="service__h"><button class="service__head" type="button" aria-expanded="false" aria-controls="maintenance-panel" id="maintenance-btn">
+                            <span class="service__num">06</span>
+                            <span class="service__title">Maintenance</span>
+                            <span class="service__summary">Updates, improvements, backups, security, and ongoing support.</span>
+                            <span class="service__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                        </button></h2>
+                        <div class="service__panel" id="maintenance-panel" role="region" aria-labelledby="maintenance-btn">
+                            <div class="service__panel-inner">
+                                <div class="service__content">
+                                    <div class="service__left">
+                                        <p class="service__desc">Ongoing care that keeps your website secure, current and improving — so you can focus on running your business.</p>
+                                        <a href="contact.html" class="link-arrow" style="margin-top:32px">Start a maintenance project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+                                    </div>
+                                    <ul class="service__features" aria-label="Maintenance features">
+                                        <li>Core, theme & plugin updates</li>
+                                        <li>Scheduled backups</li>
+                                        <li>Security monitoring</li>
+                                        <li>Content updates & small changes</li>
+                                        <li>Monthly performance check-ins</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MARQUEE ============ -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee__track">
+                <div class="marquee__group">
+                    <span class="marquee__item">Web Design</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Development</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">WordPress</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">SEO</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Performance</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">CDev.Studio</span><span class="marquee__sep">•</span>
+                </div>
+                <div class="marquee__group">
+                    <span class="marquee__item">Web Design</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Development</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">WordPress</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">SEO</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">Performance</span><span class="marquee__sep">•</span>
+                    <span class="marquee__item">CDev.Studio</span><span class="marquee__sep">•</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ INCLUDED IN EVERY PROJECT ============ -->
+        <section class="section section--off" aria-labelledby="included-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="eyebrow" data-reveal>Standard on every build</p>
+                    <h2 class="display-lg" id="included-title" data-reveal-lines>
+                        <span class="line"><span>Included in</span></span>
+                        <span class="line"><span>every project</span></span>
+                    </h2>
+                    <p class="section-head__aside" data-reveal>The fundamentals aren't add-ons. Every website we deliver ships with these built in.</p>
+                </header>
+                <div class="included__grid">
+                    <div class="included__item" data-reveal style="--d:0"><span class="mono">01</span><div><h3>Responsive design</h3><p>Layouts crafted for phones, tablets and desktops.</p></div></div>
+                    <div class="included__item" data-reveal style="--d:1"><span class="mono">02</span><div><h3>Performance</h3><p>Optimized code, images and loading strategy.</p></div></div>
+                    <div class="included__item" data-reveal style="--d:2"><span class="mono">03</span><div><h3>SEO foundations</h3><p>Semantic markup, metadata and clean structure.</p></div></div>
+                    <div class="included__item" data-reveal style="--d:0"><span class="mono">04</span><div><h3>Accessibility</h3><p>Keyboard support, contrast and readable type.</p></div></div>
+                    <div class="included__item" data-reveal style="--d:1"><span class="mono">05</span><div><h3>Analytics setup</h3><p>Understand how visitors find and use your site.</p></div></div>
+                    <div class="included__item" data-reveal style="--d:2"><span class="mono">06</span><div><h3>Launch support</h3><p>Deployment, testing and a smooth handover.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CTA ============ -->
+        <section class="section section--dark cta" aria-labelledby="services-cta">
+            <div class="cta__bg" aria-hidden="true"></div>
+            <div class="container cta__inner">
+                <div>
+                    <p class="eyebrow" data-reveal>Not sure what you need?</p>
+                    <h2 class="display-xl cta__title" id="services-cta" style="margin-top:28px" data-split="words">Let's figure it out together.</h2>
+                    <p class="cta__text" data-reveal>Share your goals and we'll recommend the right mix of services for your business and budget.</p>
+                </div>
+                <a href="contact.html" class="btn btn--light btn--circle" data-magnetic="0.4" data-reveal="scale">Start a project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__intro">
+                    <p class="eyebrow">Have a project in mind?</p>
+                    <a href="mailto:hello@cdev.studio" class="footer__email link-underline">hello@cdev.studio</a>
+                    <p class="footer__tagline">Fast websites. Thoughtful design. Built to grow.</p>
+                </div>
+                <nav class="footer__col" aria-label="Footer">
+                    <p class="eyebrow">Navigation</p>
+                    <ul>
+                        <li><a class="link-underline" href="index.html">Home</a></li>
+                        <li><a class="link-underline" href="about.html">About Us</a></li>
+                        <li><a class="link-underline" href="services.html">Services</a></li>
+                        <li><a class="link-underline" href="projects.html">Projects</a></li>
+                        <li><a class="link-underline" href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__col">
+                    <p class="eyebrow">Social</p>
+                    <ul>
+                        <li><a class="link-underline" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></li>
+                        <li><a class="link-underline" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                        <li><a class="link-underline" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook ↗</a></li>
+                        <li><a class="link-underline" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="index.html" class="footer__wordmark" data-split="chars" data-proximity aria-label="CDev.Studio — Home">CDev.Studio</a>
+            <div class="footer__bottom">
+                <p>© 2026 CDev.Studio. All rights reserved.</p>
+                <p>Hand-built with HTML, CSS &amp; JavaScript.</p>
+                <a href="#main" class="link-underline" data-back-top>Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+        <svg viewBox="0 0 52 52" aria-hidden="true"><circle class="ring-track" cx="26" cy="26" r="24"/><circle class="ring-progress" cx="26" cy="26" r="24"/></svg>
+        <span class="back-to-top__arrow" aria-hidden="true">↑</span>
+    </button>
+</body>
+</html>

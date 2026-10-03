@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — CDev.Studio</title>
+    <meta name="description" content="Have a project in mind? Tell CDev.Studio what you're building and let's turn the idea into a website that works for your business.">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CDev.Studio">
+    <meta property="og:title" content="Contact — CDev.Studio">
+    <meta property="og:description" content="Have a project in mind? Tell CDev.Studio what you're building and let's turn the idea into a website that works for your business.">
+    <meta property="og:image" content="assets/images/og-image.svg">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="page-contact">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Global chrome: page transition, scroll progress, custom cursor -->
+    <div class="page-transition" aria-hidden="true"><span class="page-transition__logo">CDev.Studio</span></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true">
+        <span class="cursor__dot"></span>
+        <span class="cursor__ring"><span class="cursor__label">View</span></span>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="logo" aria-label="CDev.Studio — Home">CDev<span class="logo__dot">.</span>Studio</a>
+            <nav class="nav" aria-label="Primary">
+                <ul class="nav__list">
+                <li><a class="nav__link link-underline" href="index.html">Home</a></li>
+                <li><a class="nav__link link-underline" href="about.html">About Us</a></li>
+                <li><a class="nav__link link-underline" href="services.html">Services</a></li>
+                <li><a class="nav__link link-underline" href="projects.html">Projects</a></li>
+                <li><a class="nav__link link-underline" href="contact.html" aria-current="page">Contact Me</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="nav__cta" data-magnetic="0.25">Start a project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+            <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav aria-label="Mobile">
+            <ul class="mobile-menu__list">
+            <li><a class="mobile-menu__link" href="index.html">Home <small>01</small></a></li>
+            <li><a class="mobile-menu__link" href="about.html">About Us <small>02</small></a></li>
+            <li><a class="mobile-menu__link" href="services.html">Services <small>03</small></a></li>
+            <li><a class="mobile-menu__link" href="projects.html">Projects <small>04</small></a></li>
+            <li><a class="mobile-menu__link" href="contact.html" aria-current="page">Contact Me <small>05</small></a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__footer mono">
+            <a href="mailto:hello@cdev.studio">hello@cdev.studio</a>
+            <span>Fast websites. Thoughtful design.</span>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <!-- ============ CONTACT HERO ============ -->
+        <section class="page-hero" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="page-hero__top mono" data-load="fade">
+                    <span>( Contact )</span>
+                    <span class="hero__status"><i class="status-dot" style="background:var(--black)"></i> Replies within 1–2 business days</span>
+                </div>
+                <h1 class="display-xxl contact-hero__title" id="contact-title" data-load-lines>
+                    <span class="line"><span>Let's build</span></span>
+                    <span class="line"><span><em class="outline">something</em></span></span>
+                    <span class="line"><span>great.</span></span>
+                </h1>
+                <p class="contact-hero__lead" data-load style="--d:2">Have a project in mind? Tell us what you're building, and let's turn the idea into a website that works for your business.</p>
+            </div>
+        </section>
+
+        <!-- ============ FORM + INFO ============ -->
+        <section class="section" style="padding-top:0" aria-label="Project inquiry">
+            <div class="container contact-grid">
+
+                <!--
+                    To receive submissions on a server, add data-endpoint="https://formspree.io/f/XXXX"
+                    (or any form API). Without it, the form opens the visitor's email app pre-filled.
+                -->
+                <form class="form" id="contact-form" novalidate data-endpoint="" data-reveal>
+                    <div class="field field--half">
+                        <label class="field__label" for="name">Full Name <span class="req" aria-hidden="true">*</span></label>
+                        <input class="field__input" type="text" id="name" name="name" autocomplete="name" placeholder="Jane Doe" required aria-describedby="name-error">
+                        <span class="field__error" id="name-error" aria-live="polite"></span>
+                    </div>
+                    <div class="field field--half">
+                        <label class="field__label" for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+                        <input class="field__input" type="email" id="email" name="email" autocomplete="email" placeholder="jane@company.com" required aria-describedby="email-error">
+                        <span class="field__error" id="email-error" aria-live="polite"></span>
+                    </div>
+                    <div class="field field--half">
+                        <label class="field__label" for="company">Company / Business</label>
+                        <input class="field__input" type="text" id="company" name="company" autocomplete="organization" placeholder="Company name">
+                        <span class="field__error"></span>
+                    </div>
+                    <div class="field field--half">
+                        <label class="field__label" for="type">Project Type <span class="req" aria-hidden="true">*</span></label>
+                        <select class="field__input" id="type" name="type" required aria-describedby="type-error">
+                            <option value="">Select a project type</option>
+                            <option>Website Design</option>
+                            <option>WordPress Development</option>
+                            <option>Custom Website</option>
+                            <option>Web Application</option>
+                            <option>SEO Optimization</option>
+                            <option>Hosting &amp; Maintenance</option>
+                            <option>Not sure yet</option>
+                        </select>
+                        <span class="field__error" id="type-error" aria-live="polite"></span>
+                    </div>
+
+                    <fieldset class="field field--pills">
+                        <legend class="field__label">Budget Range</legend>
+                        <div class="pills">
+                            <label class="pill"><input type="radio" name="budget" value="Under $1,000"><span>Under $1k</span></label>
+                            <label class="pill"><input type="radio" name="budget" value="$1,000 – $3,000"><span>$1k – $3k</span></label>
+                            <label class="pill"><input type="radio" name="budget" value="$3,000 – $7,500"><span>$3k – $7.5k</span></label>
+                            <label class="pill"><input type="radio" name="budget" value="$7,500+"><span>$7.5k+</span></label>
+                            <label class="pill"><input type="radio" name="budget" value="Not sure yet"><span>Not sure yet</span></label>
+                        </div>
+                    </fieldset>
+
+                    <div class="field">
+                        <label class="field__label" for="message">Message <span class="req" aria-hidden="true">*</span></label>
+                        <textarea class="field__input" id="message" name="message" rows="5" placeholder="Tell us about your business, goals, and timeline…" required aria-describedby="message-error"></textarea>
+                        <span class="field__error" id="message-error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form__foot">
+                        <p class="form__note">Fields marked * are required. Your details are only used to reply to your inquiry.</p>
+                        <button type="submit" class="btn btn--solid btn--lg" data-magnetic="0.2">Send project inquiry <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></button>
+                    </div>
+                    <p class="form__status" role="status" aria-live="polite"></p>
+                </form>
+
+                <aside class="contact-aside" aria-label="Contact information">
+                    <div class="contact-aside__block" data-reveal style="--d:1">
+                        <p class="eyebrow">Email</p>
+                        <a href="mailto:hello@cdev.studio" class="contact-aside__email link-underline">hello@cdev.studio</a>
+                    </div>
+                    <div class="contact-aside__block" data-reveal style="--d:2">
+                        <p class="eyebrow">Available for</p>
+                        <ul class="contact-aside__list">
+                            <li>Website Design</li>
+                            <li>WordPress Development</li>
+                            <li>Custom Websites</li>
+                            <li>Website Maintenance</li>
+                        </ul>
+                    </div>
+                    <div class="contact-aside__block" data-reveal style="--d:3">
+                        <p class="eyebrow">Elsewhere</p>
+                        <div class="contact-aside__socials">
+                            <a class="link-underline" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+                            <a class="link-underline" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                            <a class="link-underline" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook ↗</a>
+                            <a class="link-underline" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ============ INTERACTIVE TYPE ============ -->
+        <section class="section section--off talk" aria-label="Email us">
+            <div class="container">
+                <a href="mailto:hello@cdev.studio" class="talk__link" data-proximity aria-label="Have an idea? Let's talk. Email hello@cdev.studio">
+                    <span class="talk__line" data-split="chars">Have an idea?</span>
+                    <span class="talk__line talk__line--alt" data-split="chars">Let's talk.</span>
+                </a>
+                <div class="talk__foot mono">
+                    <span>Hover the letters — then say hello</span>
+                    <span>hello@cdev.studio ↗</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__intro">
+                    <p class="eyebrow">Have a project in mind?</p>
+                    <a href="mailto:hello@cdev.studio" class="footer__email link-underline">hello@cdev.studio</a>
+                    <p class="footer__tagline">Fast websites. Thoughtful design. Built to grow.</p>
+                </div>
+                <nav class="footer__col" aria-label="Footer">
+                    <p class="eyebrow">Navigation</p>
+                    <ul>
+                        <li><a class="link-underline" href="index.html">Home</a></li>
+                        <li><a class="link-underline" href="about.html">About Us</a></li>
+                        <li><a class="link-underline" href="services.html">Services</a></li>
+                        <li><a class="link-underline" href="projects.html">Projects</a></li>
+                        <li><a class="link-underline" href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__col">
+                    <p class="eyebrow">Social</p>
+                    <ul>
+                        <li><a class="link-underline" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></li>
+                        <li><a class="link-underline" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                        <li><a class="link-underline" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook ↗</a></li>
+                        <li><a class="link-underline" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="index.html" class="footer__wordmark" data-split="chars" data-proximity aria-label="CDev.Studio — Home">CDev.Studio</a>
+            <div class="footer__bottom">
+                <p>© 2026 CDev.Studio. All rights reserved.</p>
+                <p>Hand-built with HTML, CSS &amp; JavaScript.</p>
+                <a href="#main" class="link-underline" data-back-top>Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+        <svg viewBox="0 0 52 52" aria-hidden="true"><circle class="ring-track" cx="26" cy="26" r="24"/><circle class="ring-progress" cx="26" cy="26" r="24"/></svg>
+        <span class="back-to-top__arrow" aria-hidden="true">↑</span>
+    </button>
+</body>
+</html>

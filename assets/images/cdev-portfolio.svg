@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="CDEV website mockup"><defs>
+<linearGradient id="g-cdev-portfolio" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a2a"/><stop offset="1" stop-color="#1a1a1a"/></linearGradient>
+<pattern id="p-cdev-portfolio" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="24" stroke="#8a8a8a" stroke-opacity=".25" stroke-width="1"/></pattern>
+</defs>
+<rect width="1600" height="1000" fill="#0b0b0b"/><rect width="1600" height="56" fill="#161616"/>
+<circle cx="32" cy="28" r="7" fill="#8a8a8a" fill-opacity=".5"/><circle cx="56" cy="28" r="7" fill="#8a8a8a" fill-opacity=".35"/><circle cx="80" cy="28" r="7" fill="#8a8a8a" fill-opacity=".2"/>
+<rect x="580.0" y="14" width="440" height="28" rx="14" fill="#0b0b0b" fill-opacity=".7"/>
+<text x="800.0" y="33" font-family="Menlo, Consolas, monospace" font-size="13" fill="#8a8a8a" text-anchor="middle">cdev.studio/portfolio</text><text x="80" y="100" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="22" letter-spacing="2" fill="#ffffff">CDEV</text><rect x="1040" y="90" width="64" height="10" fill="#8a8a8a" fill-opacity=".6"/><rect x="1136" y="90" width="64" height="10" fill="#8a8a8a" fill-opacity=".6"/><rect x="1232" y="90" width="64" height="10" fill="#8a8a8a" fill-opacity=".6"/><rect x="1328" y="90" width="64" height="10" fill="#8a8a8a" fill-opacity=".6"/>
+<rect x="1430" y="76" width="90" height="36" fill="none" stroke="#ffffff" stroke-width="1.5"/><text x="800" y="520" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="300" letter-spacing="-14" fill="#ffffff" text-anchor="middle">CDEV</text>
+<text x="800" y="600" font-family="Menlo, Consolas, monospace" font-size="18" letter-spacing="6" fill="#8a8a8a" text-anchor="middle">DESIGN · DEVELOPMENT · MOTION</text>
+<circle cx="1360" cy="250" r="90" fill="none" stroke="#ffffff" stroke-opacity=".5"/><circle cx="1360" cy="250" r="4" fill="#ffffff"/>
+<line x1="80" y1="760" x2="1520" y2="760" stroke="#8a8a8a" stroke-opacity=".4"/><rect x="80" y="800" width="460" height="150" fill="url(#g-cdev-portfolio)"/><rect x="570" y="800" width="460" height="150" fill="url(#g-cdev-portfolio)"/><rect x="1060" y="800" width="460" height="150" fill="url(#g-cdev-portfolio)"/></svg>

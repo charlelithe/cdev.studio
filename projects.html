@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects — CDev.Studio</title>
+    <meta name="description" content="Selected work by CDev.Studio: websites and web applications for construction, maritime, hospitality, legal and more.">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CDev.Studio">
+    <meta property="og:title" content="Projects — CDev.Studio">
+    <meta property="og:description" content="Selected work by CDev.Studio: websites and web applications for construction, maritime, hospitality, legal and more.">
+    <meta property="og:image" content="assets/images/og-image.svg">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="page-projects">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Global chrome: page transition, scroll progress, custom cursor -->
+    <div class="page-transition" aria-hidden="true"><span class="page-transition__logo">CDev.Studio</span></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true">
+        <span class="cursor__dot"></span>
+        <span class="cursor__ring"><span class="cursor__label">View</span></span>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="logo" aria-label="CDev.Studio — Home">CDev<span class="logo__dot">.</span>Studio</a>
+            <nav class="nav" aria-label="Primary">
+                <ul class="nav__list">
+                <li><a class="nav__link link-underline" href="index.html">Home</a></li>
+                <li><a class="nav__link link-underline" href="about.html">About Us</a></li>
+                <li><a class="nav__link link-underline" href="services.html">Services</a></li>
+                <li><a class="nav__link link-underline" href="projects.html" aria-current="page">Projects</a></li>
+                <li><a class="nav__link link-underline" href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="nav__cta" data-magnetic="0.25">Start a project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+            <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav aria-label="Mobile">
+            <ul class="mobile-menu__list">
+            <li><a class="mobile-menu__link" href="index.html">Home <small>01</small></a></li>
+            <li><a class="mobile-menu__link" href="about.html">About Us <small>02</small></a></li>
+            <li><a class="mobile-menu__link" href="services.html">Services <small>03</small></a></li>
+            <li><a class="mobile-menu__link" href="projects.html" aria-current="page">Projects <small>04</small></a></li>
+            <li><a class="mobile-menu__link" href="contact.html">Contact Me <small>05</small></a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu__footer mono">
+            <a href="mailto:hello@cdev.studio">hello@cdev.studio</a>
+            <span>Fast websites. Thoughtful design.</span>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <!-- ============ PROJECTS HERO ============ -->
+        <section class="page-hero section--dark projects-hero" aria-labelledby="projects-title">
+            <div class="hero__bg" aria-hidden="true" style="position:absolute;inset:0"><div class="hero__grid"></div><div class="noise"></div></div>
+            <div class="container">
+                <div class="page-hero__top mono" data-load="fade">
+                    <span>( Selected projects )</span>
+                    <span>2024 — 2026</span>
+                </div>
+                <h1 class="display-xxl" id="projects-title" data-load-lines>
+                    <span class="line"><span>Work that</span></span>
+                    <span class="line"><span>speaks for</span></span>
+                    <span class="line"><span>itself.</span></span>
+                </h1>
+                <div class="projects-hero__foot" data-load style="--d:2">
+                    <p>Websites and web applications for businesses that care about how they show up online.</p>
+                    <span class="projects-hero__count" aria-label="8 projects">08<sup>Projects</sup></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FILTERS ============ -->
+        <div class="filters">
+            <div class="container filters__inner">
+                <div class="filters__list" role="group" aria-label="Filter projects by category">
+                        <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+                        <button type="button" class="filter-btn" data-filter="web-design" aria-pressed="false">Web Design</button>
+                        <button type="button" class="filter-btn" data-filter="wordpress" aria-pressed="false">WordPress</button>
+                        <button type="button" class="filter-btn" data-filter="custom" aria-pressed="false">Custom Development</button>
+                        <button type="button" class="filter-btn" data-filter="web-app" aria-pressed="false">Web Applications</button>
+                </div>
+                <p class="filters__status mono" aria-live="polite">Showing 08 projects</p>
+            </div>
+        </div>
+
+        <!-- ============ GALLERY ============ -->
+        <section class="section gallery-section" aria-label="Project gallery">
+            <div class="container">
+                <div class="gallery">
+                    <article class="project-card" data-id="techmaster" data-categories="web-design wordpress" data-cursor="project" data-cursor-label="Open">
+                        <div class="project-card__media">
+                            <img src="assets/images/techmaster.svg" alt="Techmaster Builders website design" width="1600" height="1000" loading="eager" decoding="async">
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="mono">View case study</span>
+                                <span class="project-card__arrow">→</span>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h2 class="project-card__title">Techmaster Builders</h2>
+                            <span class="project-card__year">2025</span>
+                            <p class="project-card__cat">Construction · Web Design · WordPress</p>
+                            <p class="project-card__desc">A bold, image-led website for a construction firm, built on a lean custom WordPress theme.</p>
+                            <div class="project-card__foot">
+                                <div class="tags" aria-label="Technology"><span class="tag">WordPress</span><span class="tag">PHP</span><span class="tag">JS</span></div>
+                                <button type="button" class="project-card__open" aria-haspopup="dialog">View project<span class="visually-hidden">: Techmaster Builders</span> <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-id="oceanwide" data-categories="custom web-app" data-cursor="project" data-cursor-label="Open">
+                        <div class="project-card__media">
+                            <img src="assets/images/oceanwide.svg" alt="Oceanwide MTMS website design" width="1600" height="1000" loading="lazy" decoding="async">
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="mono">View case study</span>
+                                <span class="project-card__arrow">→</span>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h2 class="project-card__title">Oceanwide MTMS</h2>
+                            <span class="project-card__year">2025</span>
+                            <p class="project-card__cat">Maritime Training · Web Application</p>
+                            <p class="project-card__desc">A training management system unifying trainee records, courses and certifications.</p>
+                            <div class="project-card__foot">
+                                <div class="tags" aria-label="Technology"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JS</span></div>
+                                <button type="button" class="project-card__open" aria-haspopup="dialog">View project<span class="visually-hidden">: Oceanwide MTMS</span> <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-id="cdev-portfolio" data-categories="web-design custom" data-cursor="project" data-cursor-label="Open">
+                        <div class="project-card__media">
+                            <img src="assets/images/cdev-portfolio.svg" alt="CDev Portfolio website design" width="1600" height="1000" loading="lazy" decoding="async">
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="mono">View case study</span>
+                                <span class="project-card__arrow">→</span>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h2 class="project-card__title">CDev Portfolio</h2>
+                            <span class="project-card__year">2024</span>
+                            <p class="project-card__cat">Creative Developer · Custom Development</p>
+                            <p class="project-card__desc">A typographic, motion-driven portfolio hand-built without frameworks.</p>
+                            <div class="project-card__foot">
+                                <div class="tags" aria-label="Technology"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Vanilla JS</span></div>
+                                <button type="button" class="project-card__open" aria-haspopup="dialog">View project<span class="visually-hidden">: CDev Portfolio</span> <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-id="northline" data-categories="web-design wordpress" data-cursor="project" data-cursor-label="Open">
+                        <div class="project-card__media">
+                            <img src="assets/images/northline.svg" alt="Northline Coffee Co. website design" width="1600" height="1000" loading="lazy" decoding="async">
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="mono">View case study</span>
+                                <span class="project-card__arrow">→</span>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h2 class="project-card__title">Northline Coffee Co.</h2>
+                            <span class="project-card__year">2026</span>
+                            <p class="project-card__cat">Hospitality · WordPress</p>
+                            <p class="project-card__desc">A warm, minimal website and online shop for an independent coffee roaster.</p>
+                            <div class="project-card__foot">
+                                <div class="tags" aria-label="Technology"><span class="tag">WordPress</span><span class="tag">WooCommerce</span></div>
+                                <button type="button" class="project-card__open" aria-haspopup="dialog">View project<span class="visually-hidden">: Northline Coffee Co.</span> <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-id="atlas" data-categories="wordpress" data-cursor="project" data-cursor-label="Open">
+                        <div class="project-card__media">
+                            <img src="assets/images/atlas.svg" alt="Atlas Legal Partners website design" width="1600" height="1000" loading="lazy" decoding="async">
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="mono">View case study</span>
+                                <span class="project-card__arrow">→</span>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h2 class="project-card__title">Atlas Legal Partners</h2>
+                            <span class="project-card__year">2026</span>
+                            <p class="project-card__cat">Legal Services · WordPress</p>
+                            <p class="project-card__desc">A calm, credible law-firm website with clear practice-area structure.</p>
+                            <div class="project-card__foot">
+                                <div class="tags" aria-label="Technology"><span class="tag">WordPress</span><span class="tag">ACF</span><span class="tag">Schema</span></div>
+                                <button type="button" class="project-card__open" aria-haspopup="dialog">View project<span class="visually-hidden">: Atlas Legal Partners</span> <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-id="pulse" data-categories="web-app custom" data-cursor="project" data-cursor-label="Open">
+                        <div class="project-card__media">
+                            <img src="assets/images/pulse.svg" alt="Pulse Clinic Booking website design" width="1600" height="1000" loading="lazy" decoding="async">
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="mono">View case study</span>
+                                <span class="project-card__arrow">→</span>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h2 class="project-card__title">Pulse Clinic Booking</h2>
+                            <span class="project-card__year">2026</span>
+                            <p class="project-card__cat">Healthcare · Web Application</p>
+                            <p class="project-card__desc">A mobile-first booking app with practitioner availability and a staff dashboard.</p>
+                            <div class="project-card__foot">
+                                <div class="tags" aria-label="Technology"><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">REST</span></div>
+                                <button type="button" class="project-card__open" aria-haspopup="dialog">View project<span class="visually-hidden">: Pulse Clinic Booking</span> <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-id="meridian" data-categories="web-design custom" data-cursor="project" data-cursor-label="Open">
+                        <div class="project-card__media">
+                            <img src="assets/images/meridian.svg" alt="Meridian Realty website design" width="1600" height="1000" loading="lazy" decoding="async">
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="mono">View case study</span>
+                                <span class="project-card__arrow">→</span>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h2 class="project-card__title">Meridian Realty</h2>
+                            <span class="project-card__year">2025</span>
+                            <p class="project-card__cat">Real Estate · Custom Development</p>
+                            <p class="project-card__desc">A fast property showcase with instant filtering and responsive galleries.</p>
+                            <div class="project-card__foot">
+                                <div class="tags" aria-label="Technology"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+                                <button type="button" class="project-card__open" aria-haspopup="dialog">View project<span class="visually-hidden">: Meridian Realty</span> <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-id="forma" data-categories="web-design" data-cursor="project" data-cursor-label="Open">
+                        <div class="project-card__media">
+                            <img src="assets/images/forma.svg" alt="Forma Studio website design" width="1600" height="1000" loading="lazy" decoding="async">
+                            <div class="project-card__overlay" aria-hidden="true">
+                                <span class="mono">View case study</span>
+                                <span class="project-card__arrow">→</span>
+                            </div>
+                        </div>
+                        <div class="project-card__info">
+                            <h2 class="project-card__title">Forma Studio</h2>
+                            <span class="project-card__year">2024</span>
+                            <p class="project-card__cat">Architecture · Web Design</p>
+                            <p class="project-card__desc">A gallery-like website for an architecture practice where the work speaks first.</p>
+                            <div class="project-card__foot">
+                                <div class="tags" aria-label="Technology"><span class="tag">Figma</span><span class="tag">HTML</span><span class="tag">CSS</span></div>
+                                <button type="button" class="project-card__open" aria-haspopup="dialog">View project<span class="visually-hidden">: Forma Studio</span> <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CTA ============ -->
+        <section class="section section--dark cta" aria-labelledby="projects-cta">
+            <div class="cta__bg" aria-hidden="true"></div>
+            <div class="container cta__inner">
+                <div>
+                    <p class="eyebrow" data-reveal>Your project next</p>
+                    <h2 class="display-xl cta__title" id="projects-cta" style="margin-top:28px" data-split="words">Ready to build something people remember?</h2>
+                    <p class="cta__text" data-reveal>Let's create a website that represents your business and helps you move forward.</p>
+                </div>
+                <a href="contact.html" class="btn btn--light btn--circle" data-magnetic="0.4" data-reveal="scale">Start a project <span class="arrow" aria-hidden="true"><span>→</span><span>→</span></span></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ PROJECT MODAL (content injected by js/script.js) ============ -->
+    <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+        <div class="modal__scroll">
+            <div class="modal__bar">
+                <span class="mono">Case study — <span class="modal__label">01 / 08</span></span>
+                <button type="button" class="modal__close">Close <span class="modal__close-x" aria-hidden="true">✕</span></button>
+            </div>
+            <div class="modal__content"></div>
+        </div>
+    </dialog>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__intro">
+                    <p class="eyebrow">Have a project in mind?</p>
+                    <a href="mailto:hello@cdev.studio" class="footer__email link-underline">hello@cdev.studio</a>
+                    <p class="footer__tagline">Fast websites. Thoughtful design. Built to grow.</p>
+                </div>
+                <nav class="footer__col" aria-label="Footer">
+                    <p class="eyebrow">Navigation</p>
+                    <ul>
+                        <li><a class="link-underline" href="index.html">Home</a></li>
+                        <li><a class="link-underline" href="about.html">About Us</a></li>
+                        <li><a class="link-underline" href="services.html">Services</a></li>
+                        <li><a class="link-underline" href="projects.html">Projects</a></li>
+                        <li><a class="link-underline" href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__col">
+                    <p class="eyebrow">Social</p>
+                    <ul>
+                        <li><a class="link-underline" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></li>
+                        <li><a class="link-underline" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                        <li><a class="link-underline" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook ↗</a></li>
+                        <li><a class="link-underline" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="index.html" class="footer__wordmark" data-split="chars" data-proximity aria-label="CDev.Studio — Home">CDev.Studio</a>
+            <div class="footer__bottom">
+                <p>© 2026 CDev.Studio. All rights reserved.</p>
+                <p>Hand-built with HTML, CSS &amp; JavaScript.</p>
+                <a href="#main" class="link-underline" data-back-top>Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">
+        <svg viewBox="0 0 52 52" aria-hidden="true"><circle class="ring-track" cx="26" cy="26" r="24"/><circle class="ring-progress" cx="26" cy="26" r="24"/></svg>
+        <span class="back-to-top__arrow" aria-hidden="true">↑</span>
+    </button>
+</body>
+</html>
