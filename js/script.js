@@ -27,7 +27,7 @@
        Project data (shared by the gallery modal).
        Placeholder case studies — replace copy, links and images with real ones.
        ---------------------------------------------------------------------- */
-    const PROJECTS = {
+    /* const PROJECTS = {
         techmaster: {
             title: "Techmaster Builders",
             industry: "Construction",
@@ -140,7 +140,7 @@
             features: ["Gallery-led project pages", "Typographic index", "Studio & team pages", "Optimized media", "Contact & press kit"],
             results: [["Minimal", "Work-first presentation"], ["Fast", "Optimized large imagery"], ["Timeless", "Design that ages well"]],
         },
-    };
+    }; */
 
     /* ----------------------------------------------------------------------
        1. Page load & page transitions
@@ -745,7 +745,8 @@
 
     function initModal(cards) {
         const modal = $("#project-modal");
-        if (!modal || typeof modal.showModal !== "function") return;
+        // Cards now link straight to the live site; the modal only runs if PROJECTS is restored
+        if (!modal || typeof modal.showModal !== "function" || typeof PROJECTS === "undefined") return;
         const content = $(".modal__content", modal);
         const scroller = $(".modal__scroll", modal);
         const label = $(".modal__label", modal);

@@ -1021,7 +1021,8 @@ body.is-loaded [data-load-lines] .line > span { transform: none; }
     line-height: 0.92;
     letter-spacing: -0.045em;
     text-transform: uppercase;
-    transition: transform 0.8s var(--ease);
+    /* Nudged with padding, not transform: a transform here would shrink the stretched link below to the title */
+    transition: padding-left 0.8s var(--ease);
 }
 .work-card__title a::after {
     content: "";
@@ -1067,7 +1068,7 @@ body.is-loaded [data-load-lines] .line > span { transform: none; }
     }
     .work-card:hover .work-card__media img,
     .work-card:focus-within .work-card__media img { transform: scale(1.06); }
-    .work-card:hover .work-card__title { transform: translate3d(10px, 0, 0); }
+    .work-card:hover .work-card__title { padding-left: 10px; }
     .work-card:hover .work-card__reveal,
     .work-card:focus-within .work-card__reveal { opacity: 1; transform: none; transition-delay: 0.08s; }
     .work-card:hover .work-card__top,
